@@ -1,4 +1,4 @@
-
+#sum of the digits
 def sum_of_digits(n):
     n = abs(n)
     total_sum = 0
@@ -8,6 +8,31 @@ def sum_of_digits(n):
     return total_sum
 a=int(input("enter the number:"))
 print("sum of digits:",sum_of_digits(a))
+
 output:
-       enter the number:1234567890 
-       sum of digits: 45
+enter the number:1234567890 
+sum of digits: 45
+
+#reverse the number
+def reverse_number(n):
+    a = 0
+    sign = -1 if n < 0 else 1
+    n = abs(n)
+    while n > 0:
+        b = n % 10
+        a = a * 10 + b
+        n //= 10
+    return sign * a
+
+num = int(input("enter the number: "))
+("reverse number:", reverse_number(num))
+
+output:
+enter the number: 5678
+reverse number: 8765
+
+
+
+
+
+
