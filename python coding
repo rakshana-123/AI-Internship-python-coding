@@ -1,0 +1,13 @@
+
+def sum_of_digits(n):
+    n = abs(n)
+    total_sum = 0
+    while n > 0:
+        total_sum += n % 10
+        n //= 10
+    return total_sum
+a=int(input("enter the number:"))
+print("sum of digits:",sum_of_digits(a))
+output:
+       enter the number:1234567890 
+       sum of digits: 45
